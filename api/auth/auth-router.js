@@ -1,5 +1,14 @@
+const express = require('express');
+const router = express.Router();
 // Require `checkUsernameFree`, `checkUsernameExists` and `checkPasswordLength`
 // middleware functions from `auth-middleware.js`. You will need them here!
+const {
+  checkUsernameFree,
+  checkUsernameExists,
+  checkPasswordLength
+} = require('../auth/auth-middleware');
+
+
 
 
 /**
